@@ -1,0 +1,11 @@
+﻿@using DevIO.UI.Site.Data
+@inject IPedidoRepository TestePedidoRepository
+@inject IPedidoRepository TestePedidoRepository2
+
+<!--Dois injects apenas para ver a possibilidade de funcionamento de duas chamadas do @@inject-->
+<!--Um teste apenas para utilizar todo o conceito de inject, caso seja necessário em alguma aplicação a chamada inject dentro da View, apesar de não ser nem um pouco recomendado, principalmente um repositório. -->
+
+Olá <br />
+
+Item 1: @TestePedidoRepository.ObterPedido().Id; <br />
+Item 2: @TestePedidoRepository2.ObterPedido().Id;
